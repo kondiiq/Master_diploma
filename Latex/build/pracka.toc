@@ -1,1 +1,15 @@
 \babel@toc {nil}{}\relax 
+\contentsline {chapter}{\numberline {1}Wprowadzenie}{2}{}%
+\contentsline {section}{\numberline {1.1}Cel pracy dyplomowej}{2}{}%
+\contentsline {section}{\numberline {1.2}Założenia oraz zakres pracy dyplomowej}{2}{}%
+\contentsline {section}{\numberline {1.3}Wykorzystywane narzędzia}{2}{}%
+\contentsline {chapter}{\numberline {2}Metody rozwiązywania problemów optymalizacyjnych}{3}{}%
+\contentsline {section}{\numberline {2.1}Problem plecakowy - Knapsack Problem}{3}{}%
+\contentsline {section}{\numberline {2.2}Rozwiązania dokładne}{3}{}%
+\contentsline {section}{\numberline {2.3}Rozwiązania przybliżone}{3}{}%
+\contentsline {chapter}{\numberline {3}Proponowane rozwiązania problemu pracy dyplomowej}{4}{}%
+\contentsline {chapter}{\numberline {4}Rozwiązania zaproponowane przez autora tekstu}{5}{}%
+\contentsline {chapter}{\numberline {5}Badania otrzymanych rozwiązań}{6}{}%
+\contentsline {chapter}{\numberline {6}Porównanie wyników pomiędzy różnymi implementacjami}{7}{}%
+\contentsline {chapter}{\numberline {7}Wnioski}{8}{}%
+\contentsline {chapter}{\numberline {8}Podsumowanie}{9}{}%
