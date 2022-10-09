@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.9)  9 OCT 2022 18:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.9)  9 OCT 2022 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -633,9 +633,7 @@ File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Unused global option(s):
     [mgr].
 
-
-(C:\Users\kowal\Desktop\PWr\Magistera\Diploma\Pracka_Latex\dyplomowanko\Latex\b
-uild\pracka.aux)
+(C:\Users\kowal\Desktop\PWr\Magistera\Diploma\Latex\build\pracka.aux)
 \openout1 = `pracka.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -736,8 +734,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {C:/Users/kowal/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(C:\Users\kowal\Desktop\PWr\Magistera\Diploma\Pracka_Latex\dyplomowanko\Latex\b
-uild\pracka.toc)
+(C:\Users\kowal\Desktop\PWr\Magistera\Diploma\Latex\build\pracka.toc)
 \tf@toc=\write5
 \openout5 = `pracka.toc'.
 
@@ -745,8 +742,7 @@ uild\pracka.toc)
 
 
 ]
-(C:\Users\kowal\Desktop\PWr\Magistera\Diploma\Pracka_Latex\dyplomowanko\Latex\b
-uild\pracka.lof)
+(C:\Users\kowal\Desktop\PWr\Magistera\Diploma\Latex\build\pracka.lof)
 \tf@lof=\write6
 \openout6 = `pracka.lof'.
 
@@ -754,25 +750,24 @@ uild\pracka.lof)
 
 
 ]
-(C:\Users\kowal\Desktop\PWr\Magistera\Diploma\Pracka_Latex\dyplomowanko\Latex\b
-uild\pracka.aux) ) 
+(C:\Users\kowal\Desktop\PWr\Magistera\Diploma\Latex\build\pracka.aux) ) 
 Here is how much of TeX's memory you used:
  17054 strings out of 478338
- 344009 string characters out of 2836700
- 630004 words of memory out of 3000000
+ 343645 string characters out of 2836700
+ 631022 words of memory out of 3000000
  35165 multiletter control sequences out of 15000+600000
  477983 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,89p,407b,375s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/kowal/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
-/pl/plrm.enc}{C:/Users/kowal/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/p
-lsc.enc}<C:/Users/kowal/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plb
-x12.pfb><C:/Users/kowal/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plc
-sc10.pfb><C:/Users/kowal/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pl
-r12.pfb><C:/Users/kowal/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr
-17.pfb>
-Output written on C:\Users\kowal\Desktop\PWr\Magistera\Diploma\Pracka_Latex\dyp
-lomowanko\Latex\build\pracka.pdf (3 pages, 45061 bytes).
+{C:/User
+s/kowal/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc}{C:/Users/kow
+al/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plsc.enc}<C:/Users/kowal/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/kowal/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/pl/plcsc10.pfb><C:/Users/kowal/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/kowal/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb>
+Output written on C:\Users\kowal\Desktop\PWr\Magistera\Diploma\Latex\build\prac
+ka.pdf (3 pages, 45721 bytes).
 PDF statistics:
  37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
