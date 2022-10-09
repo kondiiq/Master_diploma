@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.9)  9 OCT 2022 19:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.9)  9 OCT 2022 20:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -791,11 +791,11 @@ Rozdzia\PlPrIeC {\l } 8.
 
 ] (C:\Users\kowal\Desktop\PWr\Magistera\Diploma\Latex\build\pracka.aux) ) 
 Here is how much of TeX's memory you used:
- 17057 strings out of 478338
- 343690 string characters out of 2836700
+ 17058 strings out of 478338
+ 343707 string characters out of 2836700
  631025 words of memory out of 3000000
- 35168 multiletter control sequences out of 15000+600000
- 478991 words of font info for 54 fonts, out of 8000000 for 9000
+ 35169 multiletter control sequences out of 15000+600000
+ 479495 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,89p,407b,375s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Us
@@ -806,7 +806,7 @@ AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plcsc10.pfb><C:/Users/kowal
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/kowal/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb>
 Output written on C:\Users\kowal\Desktop\PWr\Magistera\Diploma\Latex\build\prac
-ka.pdf (11 pages, 55454 bytes).
+ka.pdf (11 pages, 56112 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
