@@ -7,8 +7,8 @@ def ratio_choice(max_capacity, weight, value, n):
     final_profit = []
     for element in range(0, n):
         ratio.append(value[element] / weight[element])
-    # print(ratio.index(max(ratio)))##index
-    # print(ratio[ratio.index(max(ratio))])##value
+    # print(ratio.index(max(ratio))) -> index
+    # print(ratio[ratio.index(max(ratio))]) -> value
     while actual_capacity <= max_capacity:
         if actual_capacity + ratio[ratio.index(max(ratio))] <= max_capacity:
             index = ratio.index(max(ratio))
