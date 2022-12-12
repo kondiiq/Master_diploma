@@ -1,5 +1,3 @@
-# print('TBA done..')
-
 def ratio_choice(max_capacity, weight, value, n):
     ratio = []
     actual_capacity = 0
