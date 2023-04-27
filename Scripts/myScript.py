@@ -10,6 +10,14 @@ def create_val_weight_ratio_list(weight_lst, values_lst):
     return sol
 
 
+def crate_weight_val_ratio_list(rest_of_weight_list, rest_of_val_list):
+    sol = []
+    length = len(rest_of_weight_list)
+    for element in range(0, length):
+        sol.append(rest_of_weight_list[element] / rest_of_val_list[element])
+    return sol
+
+
 def divide_to_smaller_lists(ratio_list, numb_elements):
     return [ratio_list[element:element + numb_elements] for element in range(0, len(ratio_list), numb_elements)]
 
