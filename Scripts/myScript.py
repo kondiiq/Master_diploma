@@ -1,79 +1,67 @@
-import numpy as np
-import matplotlib as mlt
+import sys
 
 
-def create_val_weight_ratio_list(weight_lst, values_lst):
-    sol = []
-    length = len(values_lst)
-    for element in range(0, length):
-        sol.append(values_lst[element] / weight_lst[element])
-    return sol
+def create_value_weight_ratio(values_lst, weight_lst):
+    ratio_lst = []
+    for element in range(0, len(values_lst)):
+        ratio_lst.append(values_lst[element] / weight_lst[element])
+    return ratio_lst
 
 
-def crate_weight_val_ratio_list(rest_of_weight_list, rest_of_val_list):
-    sol = []
-    length = len(rest_of_weight_list)
-    for element in range(0, length):
-        sol.append(rest_of_weight_list[element] / rest_of_val_list[element])
-    return sol
+def divide_to_smaller_set(value_weight_lst, elements_in_set):
+    return [value_weight_lst[element:element + elements_in_set] for element in
+            range(0, len(value_weight_lst), elements_in_set)]
 
 
-def divide_to_smaller_lists(ratio_list, numb_elements):
-    return [ratio_list[element:element + numb_elements] for element in range(0, len(ratio_list), numb_elements)]
+def choose_best_ratio(*smaller_portion):
+    best_candidates = []
+    for arrays in smaller_portion:
+        for item in arrays:
+            best_candidates.append((max(item)))
+    return best_candidates
 
 
-def choose_best_ratio(*smaller_port):  # means many argument not depend of number in arg list
-    bst = []
-    for my_port in smaller_port:
-        for element in my_port:
-            bst.append(max(element))
-    return bst
+def find_element_in_main_set(item, main_set):
+    return main_set.index(item)
 
 
-def calculate_current_knapsack_status(best_ratio_list, val_lst, weight_lst, ratio_lst):
-    removed_weight = []
-    removed_val = []
-    for element in best_ratio_list:
-        index_ratio = ratio_lst.index(element)
-        print(f"Finded index is:{index_ratio - 1}\n")
-        removed_weight.append(weight_lst[index_ratio])
-        removed_val.append(val_lst[index_ratio])
-        del val_lst[index_ratio]
-        del weight_lst[index_ratio]
-        del ratio_lst[index_ratio]
-    return removed_val, removed_weight, ratio_lst
+def remove_element_from_main_set(main_set, candidate_index, values_lst, weight_lst):
+    main_set.pop(candidate_index)
+    weight_lst.pop(candidate_index)
+    values_lst.pop(candidate_index)
+
+
+def canIAddNewItem(current_capacity, weight_lst, main_set, knapsack_item, MAX_KNAPSACK_CAPACITY):
+    if current_capacity + weight_lst[find_element_in_main_set(knapsack_item, main_set)] >= MAX_KNAPSACK_CAPACITY:
+        return False
 
 
 if __name__ == "__main__":
-    max_capacity = 750
-    weight_list = [135, 139, 149, 150, 156, 163, 173, 184, 192, 201, 210, 214, 221, 229, 240, 150]
-    values_list = [70, 73, 77, 80, 82, 87, 90, 94, 98, 106, 110, 113, 115, 118, 120, 729]
-    solution_list = create_val_weight_ratio_list(weight_list, values_list)
-    list_len = len(solution_list)
-    smaller_portions = []
-    if len(values_list) < 10:
-        while len(values_list) % 2:
-            solution_list.append(0 / 1)
-        smaller_portions = divide_to_smaller_lists(solution_list, 2)
-    if 10 <= len(values_list) <= 29:
-        while len(solution_list) % 3 != 0:
-            print('Not divide by 3')
-            solution_list.append(0 / 1)
-        if len(solution_list) % 3 == 0:
-            smaller_portions = divide_to_smaller_lists(solution_list, 3)
-    '''if len(values_list) >= 30 and len(values_list) <= 49:
-        while len(solution_list) % 5 != 0:
-            solution_list.append(0/1)
-        if len(solution_list) % 5:
-            smaller_portions = divide_to_smaller_lists(solution_list, 5)
-    if len(values_list) >= 50 and len(values_list) <= 89:
-        while len(solution_list) % 7 != 0:
-            smaller_portions = solution_list.append(0/1)
-        if len(solution_list) % 7:
-            smaller_portions = divide_to_smaller_lists(solution_list, 7) '''
-    best_current_ratio = choose_best_ratio(smaller_portions)
-    removed_elements_value, removed_elements_weight, solution_list\
-        = calculate_current_knapsack_status(best_current_ratio, values_list, weight_list, solution_list)
-    print(f'Current knapsack Values is :{sum(removed_elements_value)}\n'
-          f' Current knapsack Weight is : {sum(removed_elements_weight)}\n'
-          f'Remain{max_capacity - sum(removed_elements_weight)} Weight units')
+    MAX_CAPACITY = 250
+    current_knapsack_status = 0
+    current_knapsack_value = 0
+    removed_values = []
+    removed_weight = []
+    indx_to_remove = []
+    weight_list = [7, 1, 30, 22, 80, 94, 11, 81, 70, 64, 59, 18, 36]
+    values_list = [360, 83, 59, 130, 431, 67, 230, 52, 93, 125, 670, 892, 600]
+    while current_knapsack_status + min(weight_list) < MAX_CAPACITY:
+        val_wei_lst = create_value_weight_ratio(values_list, weight_list)
+        smaller_sets = divide_to_smaller_set(val_wei_lst, 3)
+        candidates = choose_best_ratio(smaller_sets)
+        print(f"Val lst: {values_list} \n Weight lst: {weight_list}\n Ratio lst: {val_wei_lst}")
+        print(f"Smaller sets {smaller_sets}")
+        print(f"Candidates: {candidates}")
+        for element in candidates:
+            indx = find_element_in_main_set(element, val_wei_lst)
+            current_knapsack_status += weight_list[indx]
+            current_knapsack_value += values_list[indx]
+            removed_values.append(values_list[indx])
+            removed_weight.append(weight_list[indx])
+            weight_list.pop(indx)
+            val_wei_lst.pop(indx)
+            values_list.pop(indx)
+        print(f"Current capacity: {current_knapsack_status}")
+        print(f"Current knapsack value:{current_knapsack_value}")
+        print(f'Weight after {weight_list}\n values: {values_list}\n ratio: {val_wei_lst}')
+
