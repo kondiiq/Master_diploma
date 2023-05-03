@@ -1,6 +1,3 @@
-import sys
-
-
 def create_value_weight_ratio(values_lst, weight_lst):
     ratio_lst = []
     for element in range(0, len(values_lst)):
@@ -43,8 +40,7 @@ if __name__ == "__main__":
         for element in candidates:
             indx = find_element_in_main_set(element, val_wei_lst)
             if weight_list[indx] + current_knapsack_status > MAX_CAPACITY:
-                print(f"Candidates weight: {removed_weight}\n Values: {removed_values}")
-                print(f"Current knapsack value:{current_knapsack_value}\n Current capacity: {current_knapsack_status}")
+                print(f"Candidates weight: {removed_weight}\n Values: {removed_values}\n Current knapsack value:{current_knapsack_value}\n Current capacity: {current_knapsack_status}")
                 break
             current_knapsack_status += weight_list[indx]
             current_knapsack_value += values_list[indx]
@@ -54,5 +50,4 @@ if __name__ == "__main__":
             weight_list.pop(indx)
             val_wei_lst.pop(indx)
             values_list.pop(indx)
-    print(f"Candidates weight: {removed_weight}\n Values: {removed_values}")
-    print(f"Current knapsack value:{current_knapsack_value}\n Current capacity: {current_knapsack_status}")
+    print(f"Candidates weight: {removed_weight}\n Values: {removed_values}\n Current knapsack value:{current_knapsack_value}\n Current capacity: {current_knapsack_status}")
